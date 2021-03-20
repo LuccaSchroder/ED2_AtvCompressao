@@ -18,6 +18,10 @@ void AlgoritmoComp::codificar(string cod){
             atual = "";
         }
     }
+    if(atual != "")
+    {
+        dicionario.insereSequencia(atual, '\0');
+    }
 }
 
 void AlgoritmoComp::imprime(){
